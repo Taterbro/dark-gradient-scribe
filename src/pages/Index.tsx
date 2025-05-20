@@ -64,7 +64,7 @@ const Index = () => {
   }, []);
 
   const handleSelectNote = (note: Note) => {
-    setActiveNote(note);
+    setActiveNote(note.body);
   };
 
   const handleCreateNote = () => {

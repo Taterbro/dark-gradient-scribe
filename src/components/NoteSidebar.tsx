@@ -102,9 +102,9 @@ const NoteSidebar: React.FC<NoteSidebarProps> = ({
           <div className="flex-grow overflow-y-auto scrollbar-hide">
             {notes?.length > 0 ? (
               <ul>
-                {notes.map((note) => (
+                {notes.map((note, index) => (
                   <li
-                    key={note.id}
+                    key={index}
                     className={`p-3 border-b border-white/5 cursor-pointer hover:bg-white/5 transition-colors ${
                       activeNoteId === note.id ? "bg-white/10" : ""
                     }`}
@@ -149,7 +149,7 @@ const NoteSidebar: React.FC<NoteSidebarProps> = ({
                     </div>
 
                     <p className="text-xs text-white/60 mt-1 line-clamp-2">
-                      {note.body.substring(0, 100)}
+                      {note.body.text.substring(0, 100)}
                     </p>
                   </li>
                 ))}

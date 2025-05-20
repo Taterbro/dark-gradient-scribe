@@ -1,12 +1,12 @@
 export interface Note {
   id: string;
   title: string;
-  body: string;
+  body: any;
   createdAt: string;
   updatedAt: string;
 }
 
 export interface NoteFormValues {
   title: string;
-  body: string;
+  body: any;
 }
