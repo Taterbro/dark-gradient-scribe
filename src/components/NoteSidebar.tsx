@@ -117,9 +117,6 @@ const NoteSidebar: React.FC<NoteSidebarProps> = ({
                         <h3 className="text-sm font-medium text-white/90 line-clamp-1">
                           {note.title}
                         </h3>
-                        <p className="text-xs text-white/50 mt-1">
-                          {formatDate(note.updatedAt)}
-                        </p>
                       </div>
 
                       <button
